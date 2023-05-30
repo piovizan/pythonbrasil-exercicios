@@ -1,8 +1,10 @@
-# Exercícios de lógica de programação
+# Exercícios de lógica de programação e algoritmos
 
 Resolução dos exercícios de lógica de programação da [Wiki Python Brasil](https://wiki.python.org.br/ListaDeExercicios) em C#.
 
----
+A lista de exercícios de lógica de programação e algoritmos da Wiki Python Brasil é uma forma que encontrei de treinar minhas habilidades como iniciante no mundo da programação.
+
+Esse repositório também faz parte dos meus estudos sobre controle de versão com Git.
 
 ## Enunciado dos exercícios
 ### Estrutura Sequencial
