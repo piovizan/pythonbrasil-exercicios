@@ -1,4 +1,4 @@
-// Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+// 4. Faça um Programa que peça as 4 notas bimestrais e mostre a média.
         
 double nota1, nota2, nota3, nota4;
 double media;
