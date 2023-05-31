@@ -17,3 +17,35 @@
     Obs.: Salário Bruto - Descontos = Salário Líquido.
 
 */
+
+// Ler valor ganho por hora e número de horas trabalhadas no mês
+// Descontar 11% para o Imposto de Renda
+// Descontar 8% para o INSS
+// Descontar 5% para o sindicato
+// Imprimir resultados
+
+double valor_hora, horas_trabalhadas;
+double salario, salario_liquido;
+double ir, inss, sindicato, descontos;
+
+Console.WriteLine("Valor ganho por hora: ");
+valor_hora = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Horas trabalhadas no mês: ");
+horas_trabalhadas = Convert.ToDouble(Console.ReadLine());
+
+salario = valor_hora * horas_trabalhadas;
+
+ir = (11 * salario) / 100;
+inss = (8 * salario) / 100;
+sindicato = (5 * salario) / 100;
+
+descontos = ir + inss + sindicato;
+
+salario_liquido = salario - descontos;
+
+Console.WriteLine("+ Salário Bruto : R$" + salario);
+Console.WriteLine("- IR (11%) : R$" + ir);
+Console.WriteLine("- INSS (8%) : R$" + inss);
+Console.WriteLine("- Sindicato (5%) : R$" + sindicato);
+Console.WriteLine("= Salário Liquido : R$" + salario_liquido);
