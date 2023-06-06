@@ -9,3 +9,36 @@
     - Triângulo Escaleno: três lados diferentes;
 
 */
+
+int lado1, lado2, lado3;
+
+Console.WriteLine("1º lado: ");
+lado1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("2º lado: ");
+lado2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("3º lado: ");
+lado3 = Convert.ToInt32(Console.ReadLine());
+
+if ((lado1 + lado2 > lado3) && (lado1 + lado3 > lado2) && (lado2 + lado3 > lado1))
+{
+    Console.WriteLine("Pode ser um triângulo");
+
+    if (lado1 == lado2 && lado1 == lado3)
+    {
+        Console.WriteLine("Triângulo Equilátero: três lados iguais");
+    }
+    else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3)
+    {
+        Console.WriteLine("Triângulo Isósceles: quaisquer dois lados iguais");
+    }
+    else
+    {
+        Console.WriteLine("Triângulo Escaleno: três lados diferentes");
+    }
+}
+else
+{
+    Console.WriteLine("Não pode ser um triângulo");	
+}
