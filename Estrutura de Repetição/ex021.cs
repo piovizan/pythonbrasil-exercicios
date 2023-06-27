@@ -10,7 +10,7 @@ for (int i = 1; i < numero; i++)
 {
     if (numero % i == 0)
     {
-        cont += 1;
+        cont++;
     }
 }
 
