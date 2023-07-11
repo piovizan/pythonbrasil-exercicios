@@ -10,6 +10,8 @@ Esse repositório também faz parte do meu estudo sobre controle de versão com 
 1. [Estrutura Sequencial](#estrutura-sequencial)
 2. [Estrutura de Decisão](#estrutura-de-decisão)
 3. [Estrutura de Repetição](#estrutura-de-repetição)
+4. [Listas](#listas)
+
 ### Estrutura Sequencial
 1. Faça um Programa que mostre a mensagem "Alô mundo" na tela.
 2. Faça um programa que peça um número e então mostre a mensagem *O número informado foi [número]*.
@@ -435,3 +437,75 @@ Esse repositório também faz parte do meu estudo sobre controle de versão com 
                 S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 + ... + n/m.
                 
       Imprima no final a soma da série.
+
+### Listas
+1. Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
+2. Faça um Programa que leia um vetor de 10 números reais e mostre-os na ordem inversa.
+3. Faça um Programa que leia 4 notas, mostre as notas e a média na tela.
+4. Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.
+5. Faça um Programa que leia 20 números inteiros e armazene-os num vetor. Armazene os números pares no vetor PAR e os números IMPARES no vetor impar. Imprima os três vetores.
+6. Faça um Programa que peça as quatro notas de 10 alunos, calcule e armazene num vetor a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0.
+7. Faça um Programa que leia um vetor de 5 números inteiros, mostre a soma, a multiplicação e os números.
+8. Faça um Programa que peça a idade e a altura de 5 pessoas, armazene cada informação no seu respectivo vetor. Imprima a idade e a altura na ordem inversa a ordem lida.
+9. Faça um Programa que leia um vetor A com 10 números inteiros, calcule e mostre a soma dos quadrados dos elementos do vetor.
+10. Faça um Programa que leia dois vetores com 10 elementos cada. Gere um terceiro vetor de 20 elementos, cujos valores deverão ser compostos pelos elementos intercalados dos dois outros vetores.
+11. Altere o programa anterior, intercalando 3 vetores de 10 elementos cada.
+12. Foram anotadas as idades e alturas de 30 alunos. Faça um Programa que determine quantos alunos com mais de 13 anos possuem altura inferior à média de altura desses alunos.
+13. Faça um programa que receba a temperatura média de cada mês do ano e armazene-as em uma lista. Após isto, calcule a média anual das temperaturas e mostre todas as temperaturas acima da média anual, e em que mês elas ocorreram (mostrar o mês por extenso: 1 – Janeiro, 2 – Fevereiro, . . . ).
+14. Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+
+      a. "Telefonou para a vítima?"               
+
+      b. "Esteve no local do crime?"
+
+      c. "Mora perto da vítima?"
+
+      d. "Devia para a vítima?"
+
+      e. "Já trabalhou com a vítima?"
+
+      O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
+15. Faça um programa que leia um número indeterminado de valores, correspondentes a notas, encerrando a entrada de dados quando for informado um valor igual a -1 (que não deve ser armazenado). Após esta entrada de dados, faça:
+
+      a. Mostre a quantidade de valores que foram lidos;
+    
+      b. Exiba todos os valores na ordem em que foram informados, um ao lado do outro;
+    
+      c. Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro;
+    
+      d. Calcule e mostre a soma dos valores;
+    
+      e. Calcule e mostre a média dos valores;
+    
+      f. Calcule e mostre a quantidade de valores acima da média calculada;
+    
+      g. Calcule e mostre a quantidade de valores abaixo de sete;
+    
+      h. Encerre o programa com uma mensagem;
+16. Utilize uma lista para resolver o problema a seguir. Uma empresa paga seus vendedores com base em comissões. O vendedor recebe $200 por semana mais 9 por cento de suas vendas brutas daquela semana. Por exemplo, um vendedor que teve vendas brutas de $3000 em uma semana recebe $200 mais 9 por cento de $3000, ou seja, um total de $470. Escreva um programa (usando um array de contadores) que determine quantos vendedores receberam salários nos seguintes intervalos de valores:
+
+      a. $200 - $299
+      b. $300 - $399
+      c. $400 - $499
+      d. $500 - $599
+      e. $600 - $699
+      f. $700 - $799
+      g. $800 - $899
+      h. $900 - $999
+      i. $1000 em diante
+
+      Desafio: Crie ma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs aninhados.
+17. Em uma competição de salto em distância cada atleta tem direito a cinco saltos. O resultado do atleta será determinado pela média dos cinco valores restantes. Você deve fazer um programa que receba o nome e as cinco distâncias alcançadas pelo atleta em seus saltos e depois informe o nome, os saltos e a média dos saltos. O programa deve ser encerrado quando não for informado o nome do atleta. A saída do programa deve ser conforme o exemplo abaixo:
+
+                Atleta: Rodrigo Curvêllo
+ 
+                Primeiro Salto: 6.5 m
+                Segundo Salto: 6.1 m
+                Terceiro Salto: 6.2 m
+                Quarto Salto: 5.4 m
+                Quinto Salto: 5.3 m
+
+                Resultado final:
+                Atleta: Rodrigo Curvêllo
+                Saltos: 6.5 - 6.1 - 6.2 - 5.4 - 5.3
+                Média dos saltos: 5.9 m
