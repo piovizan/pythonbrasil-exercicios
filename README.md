@@ -1,6 +1,6 @@
 # Exercícios de lógica de programação e algoritmos
 
-Resolução dos exercícios de lógica de programação da [Wiki Python Brasil](https://wiki.python.org.br/ListaDeExercicios) em C#.
+Resolução dos exercícios de lógica de programação da [Wiki Python Brasil](https://wiki.python.org.br/ListaDeExercicios) em Java.
 
 A lista de exercícios de lógica de programação e algoritmos da Wiki Python Brasil é uma forma que encontrei de treinar minhas habilidades como iniciante no mundo da programação.
 
