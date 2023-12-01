@@ -14,8 +14,6 @@ public class exercicio003 {
         System.out.println("Segundo número: ");
         int n2 = scanner.nextInt();
 
-        int soma = n1 + n2;
-
-        System.out.println(soma);
+        System.out.println(n1 + n2);
     }
 }

@@ -8,14 +8,11 @@ public class exercicio008 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double ganhaPorHora;
-        double horasTrabalhadas;
-
         System.out.println("Quanto você ganha por hora?");
-        ganhaPorHora = scanner.nextDouble();
+        double ganhaPorHora = scanner.nextDouble();
 
         System.out.println("Horas trabalhadas: ");
-        horasTrabalhadas = scanner.nextDouble();
+        double horasTrabalhadas = scanner.nextDouble();
 
         double salario = ganhaPorHora * horasTrabalhadas;
 
