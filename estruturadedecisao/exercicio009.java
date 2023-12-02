@@ -3,7 +3,7 @@ package estruturadedecisao;
 import java.util.Scanner;
 
 /**
- * 9. Faça um Programa que leia três números e mostre-os em ordem decrescente.
+ * exercicio009
  */
 public class exercicio009 {
 

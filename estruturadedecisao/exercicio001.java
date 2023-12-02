@@ -2,7 +2,7 @@ package estruturadedecisao;
 import java.util.Scanner;
 
 /**
- * 1. Faça um Programa que peça dois números e imprima o maior deles.
+ * exercicio001
  */
 public class exercicio001 {
 

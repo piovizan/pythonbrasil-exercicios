@@ -3,7 +3,7 @@ package estruturadedecisao;
 import java.util.Scanner;
 
 /**
- * 4. Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+ * exercicio004
  */
 public class exercicio004 {
 
