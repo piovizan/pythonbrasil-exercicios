@@ -3,7 +3,7 @@ package estruturadedecisao;
 import java.util.Scanner;
 
 /**
- * 03. Faça um Programa que verifique se uma letra digitada é "F" ou "M".
+ * exercicio003
  */
 public class exercicio003 {
 
