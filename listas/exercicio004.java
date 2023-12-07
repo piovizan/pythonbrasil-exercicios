@@ -25,4 +25,5 @@ public class exercicio004 {
         System.out.printf("%d consoantes foram lidas, sendo elas: ", consoantes.size());
 
         consoantes.forEach(System.out::print);
+    }
 }
