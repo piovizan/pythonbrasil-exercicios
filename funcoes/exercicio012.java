@@ -9,28 +9,22 @@ import java.util.Random;
 public class exercicio012 {
 
     public static void main(String[] args) {
-        String palavra = "Java";
+        String palavra = "Python";
         System.out.println(embaralha(palavra));
     }
     static String embaralha(String palavra) {
         Random random = new Random();
-
-        ArrayList<Character> caracteres = new ArrayList<>();
         ArrayList<Integer> sorteados = new ArrayList<>();
         StringBuilder palavraEmbaralhada = new StringBuilder();
 
         int numero;
 
-        for (int i = 0; i < palavra.length(); i++) {
-            caracteres.add(palavra.charAt(i));
-        }
-
         while (palavraEmbaralhada.length() < palavra.length()) {
-            numero = random.nextInt(caracteres.size());
+            numero = random.nextInt(palavra.length());
 
             if (sorteados.isEmpty() || !sorteados.contains(numero)) {
                 sorteados.add(numero);
-                palavraEmbaralhada.append(caracteres.get(numero));
+                palavraEmbaralhada.append(palavra.charAt(numero));
             }
         }
 
