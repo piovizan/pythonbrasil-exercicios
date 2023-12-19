@@ -18,14 +18,14 @@ public class exercicio041 {
         double valorDivida;
         double valorParcela;
 
-        System.out.printf("R$ %.2f     0           1      R$ %.2f\n", valor, valor);
+        System.out.printf("R$ %-10.2f %-10d %-10d R$ %.2f\n", valor, 0, 1, valor);
 
         for (int i = 3; i <= 12; i += 3) {
             valorJuros = (valor * juros) / 100;
             valorDivida = valor + valorJuros;
             valorParcela = valorDivida / i;
 
-            System.out.printf("R$ %.2f     %.2f      %d      R$ %.2f\n", valorDivida, valorJuros, i, valorParcela);
+            System.out.printf("R$ %-10.2f %-10.2f %-10d R$ %.2f\n", valorDivida, valorJuros, i, valorParcela);
 
             juros += 5;
         }

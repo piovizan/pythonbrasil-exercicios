@@ -16,38 +16,25 @@ public class exercicio037 {
         double altura;
         double peso;
 
-        System.out.print("Código: ");
-        codigo = scanner.nextInt();
+        double mediaAlturas = 0;
+        double mediaPesos = 0;
 
-        System.out.print("Altura: ");
-        altura = scanner.nextDouble();
+        int codigoMaisAlto = 0;
+        int codigoMaisBaixo = 0;
+        int codigoMaisGordo = 0;
+        int codigoMaisMagro = 0;
 
-        System.out.print("Peso: ");
-        peso = scanner.nextDouble();
+        double alturaMaisAlto = Double.MIN_VALUE;
+        double alturaMaisBaixo = Double.MAX_VALUE;
+        double alturaMaisGordo = 0;
+        double alturaMaisMagro = 0;
 
-        // todas as variáveis vão receber os valores lidos antes do loop acontecer
-        // conforme é feito a comparação entre os clientes, os valores vão se alterando
-        // obs: foi a maneira que eu encontrei de resolver o problema de 'váriavel local não inicializada'. dá pra encurtar o código, mas eu preferi assim
+        double pesoMaisAlto = 0;
+        double pesoMaisBaixo = 0;
+        double pesoMaisGordo = Double.MIN_VALUE;
+        double pesoMaisMagro = Double.MAX_VALUE;
 
-        double mediaAlturas = altura;
-        double mediaPesos = peso;
-
-        int codigoMaisAlto = codigo;
-        int codigoMaisBaixo = codigo;
-        int codigoMaisGordo = codigo;
-        int codigoMaisMagro = codigo;
-
-        double alturaMaisAlto = altura;
-        double alturaMaisBaixo = altura;
-        double alturaMaisGordo = altura;
-        double alturaMaisMagro = altura;
-
-        double pesoMaisAlto = peso;
-        double pesoMaisBaixo = peso;
-        double pesoMaisGordo = peso;
-        double pesoMaisMagro = peso;
-
-        while (codigo != 0) {
+        while (true) {
             quantidadeClientes++;
 
             System.out.print("Código: ");
@@ -106,7 +93,7 @@ public class exercicio037 {
         System.out.printf("Altura: %.2f\n", alturaMaisMagro);
         System.out.println("Peso: " + pesoMaisMagro);
 
-        System.out.printf("Média das alturas: %.2f\n", (mediaAlturas / quantidadeClientes));
-        System.out.printf("Média dos pesos: %.2f", (mediaPesos / quantidadeClientes));
+        System.out.printf("Média das alturas: %.2f\n", (mediaAlturas / (quantidadeClientes - 1)));
+        System.out.printf("Média dos pesos: %.2f", (mediaPesos / (quantidadeClientes - 1)));
     }
 }

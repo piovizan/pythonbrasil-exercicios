@@ -10,33 +10,21 @@ public class exercicio040 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("CIDADE 1");
+        int codigo;
+        int veiculos;
+        int acidentes;
 
-        System.out.print("Código da cidade: ");
-        int codigo = scanner.nextInt();
+        int cidadeMaiorIndice = 0;
+        int cidadeMenorIndice = 0;
+        int cidadeMenosVeiculos = 0; // número de cidades com menos de 2.000 veículos
 
-        System.out.print("Número de veículos de passeio: ");
-        int veiculos = scanner.nextInt();
+        int maiorIndiceAcidentes = Integer.MIN_VALUE;
+        int menorIndiceAcidentes = Integer.MAX_VALUE;
 
-        System.out.print("Número de acidentes de trânsito com vítimas: ");
-        int acidentes = scanner.nextInt();
-
-        int cidadeMaiorIndice = codigo;
-        int cidadeMenorIndice = codigo;
-
-        int maiorIndiceAcidentes = acidentes;
-        int menorIndiceAcidentes = acidentes;
-
-        int mediaVeiculos = veiculos;
+        int mediaVeiculos = 0;
         int mediaAcidentes = 0;
-        int cidadeMenosVeiculos = 0;
 
-        if (veiculos < 2000) {
-            cidadeMenosVeiculos++;
-            mediaAcidentes = acidentes;
-        }
-
-        for (int i = 2; i <= 5; i++) {
+        for (int i = 1; i <= 5; i++) {
             System.out.println("CIDADE " + i);
 
             System.out.print("Código da cidade: ");
@@ -75,7 +63,6 @@ public class exercicio040 {
         System.out.println("Acidentes: " + menorIndiceAcidentes);
 
         System.out.println("Média de véiculos nas cinco cidades: " + (mediaVeiculos / 5));
-
         System.out.println("Média de acidentes nas cidades com menos de 2.000 veículos: " + (mediaAcidentes / cidadeMenosVeiculos));
     }
 }

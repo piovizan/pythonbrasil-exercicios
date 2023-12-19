@@ -13,14 +13,13 @@ public class exercicio047 {
         System.out.print("Atleta: ");
         String atleta = scanner.nextLine();
 
-        System.out.print("Nota: ");
-        double nota = scanner.nextDouble();
+        double nota;
 
-        double melhorNota = nota;
-        double piorNota = nota;
-        double media = nota;
+        double melhorNota = Double.MIN_VALUE;
+        double piorNota = Double.MAX_VALUE;
+        double media = 0;
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 7; i++) {
             System.out.print("Nota: ");
             nota = scanner.nextDouble();
 

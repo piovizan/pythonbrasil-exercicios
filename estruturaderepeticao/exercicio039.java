@@ -10,23 +10,18 @@ public class exercicio039 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Aluno 1");
+        int numero;
+        int altura;
 
-        System.out.print("Número do aluno: ");
-        int numero = scanner.nextInt();
+        int numeroMaisAlto = 0;
+        int numeroMaisBaixo = 0;
 
-        System.out.print("Altura do aluno (cm): ");
-        int altura = scanner.nextInt();;
+        int alturaMaisAlto = Integer.MIN_VALUE;
+        int alturaMaisBaixo = Integer.MAX_VALUE;
 
-        int numeroMaisAlto = numero;
-        int numeroMaisBaixo = numero;
-
-        int alturaMaisAlto = altura;
-        int alturaMaisBaixo = altura;
-
-        for (int i = 2; i <= 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println("Aluno " + i);
-            
+
             System.out.print("Número do aluno: ");
             numero = scanner.nextInt();
 
