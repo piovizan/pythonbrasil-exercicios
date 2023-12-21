@@ -1,12 +1,18 @@
 package classes.exercicio01;
 
+/**
+ * exercicio001
+ */
 public class exercicio001 {
-    public static void main(String[] args) {
-        Bola bola = new Bola("Preta", 70, "Couro");
 
-        System.out.println(bola);
+    public static void main(String[] args) {
+        Bola bola = new Bola();
+
+        bola.cor = "Preta";
+        bola.circunferencia = 70.5;
+        bola.material = "Couro";
 
         bola.trocaCor("Branca");
-        System.out.println("Nova cor: " + bola.mostraCor());
+        System.out.println(bola.mostraCor());
     }
 }

@@ -6,14 +6,16 @@ package classes.exercicio02;
 public class exercicio002 {
 
     public static void main(String[] args) {
-        Quadrado quadrado = new Quadrado(2);
+        Quadrado quadrado = new Quadrado();
 
-        System.out.println("Valor do lado: " + quadrado.mostraLado());
-        System.out.println("Área do quadrado: " + quadrado.calcularArea());
+        quadrado.tamanhoLado = 2;
 
-        quadrado.mudarLado(6);
+        System.out.println(quadrado.valorLado());
+        System.out.println(quadrado.calculaArea());
 
-        System.out.println("Novo valor do lado: " + quadrado.mostraLado());
-        System.out.println("Nova área do quadrado: " + quadrado.calcularArea());
+        quadrado.mudaLado(6);
+
+        System.out.println("Novo tamanho do lado: " + quadrado.valorLado());
+        System.out.println("Novo cálculo da área: " + quadrado.calculaArea());
     }
 }

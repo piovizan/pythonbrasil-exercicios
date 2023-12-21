@@ -1,21 +1,17 @@
 package classes.exercicio02;
 
 public class Quadrado {
-    double lado;
+    double tamanhoLado;
 
-    Quadrado(double lado) {
-        this.lado = lado;
+    void mudaLado(double novoTamanho) {
+        tamanhoLado = novoTamanho;
     }
 
-    void mudarLado(double novoLado) {
-        lado = novoLado;
+    Double valorLado() {
+        return tamanhoLado;
     }
 
-    double mostraLado() {
-        return lado;
-    }
-
-    double calcularArea() {
-        return lado * lado;
+    Double calculaArea() {
+        return tamanhoLado * tamanhoLado;
     }
 }
