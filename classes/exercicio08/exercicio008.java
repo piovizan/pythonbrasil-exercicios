@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 /**
  * exercicio008
+ * 
+ * como eu não entendi o que deveria ser feito com o 'macaco canibal', eu fiz o código para que ao comer outro macaco, todos os alimentos do bucho do macaco comido vão para o bucho do macaco canibal
  */
 public class exercicio008 {
 
@@ -23,7 +25,7 @@ public class exercicio008 {
         System.out.println("Bucho do " + macaco01.getNome());
         System.out.println(macaco01.verBucho());
 
-        macaco02.comer(macaco01.getNome());
+        macaco02.comer(macaco01.bucho);
 
         System.out.println("Bucho do " + macaco02.getNome());
         System.out.println(macaco02.verBucho());

@@ -18,6 +18,9 @@ public class Macaco {
     void comer(String comida) {
         bucho.add(comida);
     }
+    void comer(ArrayList<String> comida) {
+        bucho.addAll(comida);
+    }
     void digerir() {
         bucho.clear();
     }
