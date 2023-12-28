@@ -5,6 +5,7 @@ public class Tamagotchi {
     Random random = new Random();
 
     String nome;
+    String humor;
     // o bichinho 'nasce' com uma fome aleatória
     int fome = random.nextInt(100) + 1;
     int saude = 100;
@@ -16,6 +17,9 @@ public class Tamagotchi {
     public String getNome() {
         return nome;
     }
+    public String getHumor() {
+        return humor;
+    }
     public int getFome() {
         return fome;
     }
@@ -25,6 +29,9 @@ public class Tamagotchi {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    public void setHumor(String humor) {
+        this.humor = humor;
     }
     public void setFome(int fome) {
         this.fome = fome;
@@ -41,8 +48,36 @@ public class Tamagotchi {
         fome = fome + 5;
     }
 
+    void checaHumor() {
+        if (fome < 10 && saude == 100)  
+            humor = "Feliz";
+        
+        if (fome >= 10 && fome < 50)
+            humor = "Pouca fome";
+        
+        if (fome >= 50)
+            humor = "Faminto";
+
+        if (saude < 100)
+            humor = "Doente";
+        
+        if (saude == 0)
+            humor = "Morto";
+    }
+
+    // void checaFome() {
+    //     if (fome < 0) fome = 0;
+    //     if (fome > 100) fome = 100;
+    //     if (fome == 100) perdeSaude();
+    //     if (fome == 0) saude = 100;
+    // }
+
     void mostrarEstatisticas() {
         System.out.println(nome.toUpperCase());
+
+        checaHumor();
+
+        System.out.println("Humor: " + humor);        
         System.out.println("Fome: " + fome);
         System.out.println("Saúde: " + saude);
     }

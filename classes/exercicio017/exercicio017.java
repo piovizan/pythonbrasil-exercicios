@@ -20,11 +20,16 @@ public class exercicio017 {
         int acao;
 
         while (true) {
+            System.out.println("Seus bichinhos: ");
+
+            for (Tamagotchi bichinho : bichinhos) {
+                bichinho.mostrarEstatisticas();
+            }
+
             System.out.println("Ações:");
             System.out.println("[1 - Alimentar bichinhos]");
             System.out.println("[2 - Brincar com os bichinhos]");
-            System.out.println("[3 - Mudar nomes]");
-            System.out.println("[4 - Mostrar estatísticas]");
+            System.out.println("[3 - Mudar nome de um bichinho]");
 
             System.out.print("> ");
             acao = scanner.nextInt();
@@ -57,11 +62,6 @@ public class exercicio017 {
 
                     bichinhos.get(opcao - 1).setNome(novoNome);
                     
-                    break;
-                case 4:
-                    tamagotchi1.mostrarEstatisticas();
-                    tamagotchi2.mostrarEstatisticas();
-                    tamagotchi3.mostrarEstatisticas();
                     break;
                 default:
                     break;
