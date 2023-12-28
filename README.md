@@ -2,10 +2,6 @@
 
 Resolução dos exercícios de lógica de programação da [Wiki Python Brasil](https://wiki.python.org.br/ListaDeExercicios) em Java.
 
-A lista de exercícios de lógica de programação e algoritmos da Wiki Python Brasil é uma forma que encontrei de treinar minhas habilidades como iniciante no mundo da programação.
-
-Esse repositório também faz parte do meu estudo sobre controle de versão com Git.
-
 ## Enunciado dos exercícios
 1. [Estrutura Sequencial](#estrutura-sequencial)
 2. [Estrutura de Decisão](#estrutura-de-decisão)
