@@ -48,6 +48,20 @@ public class Tamagotchi {
         fome = fome + 5;
     }
 
+    void checaFome() {
+        if (fome < 0)
+            fome = 0;        
+        
+        if (fome > 100)
+            fome = 100;
+        
+        if (fome == 100)
+            saude = saude - 10;
+
+        if (fome == 0)
+            saude = 100;
+    }
+
     void checaHumor() {
         if (fome < 10 && saude == 100)  
             humor = "Feliz";
@@ -65,16 +79,10 @@ public class Tamagotchi {
             humor = "Morto";
     }
 
-    // void checaFome() {
-    //     if (fome < 0) fome = 0;
-    //     if (fome > 100) fome = 100;
-    //     if (fome == 100) perdeSaude();
-    //     if (fome == 0) saude = 100;
-    // }
-
     void mostrarEstatisticas() {
         System.out.println(nome.toUpperCase());
 
+        checaFome();
         checaHumor();
 
         System.out.println("Humor: " + humor);        

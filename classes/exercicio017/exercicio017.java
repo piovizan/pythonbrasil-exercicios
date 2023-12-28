@@ -19,7 +19,13 @@ public class exercicio017 {
 
         int acao;
 
-        while (true) {
+        while (bichinhos.size() > 0) {
+            // removendo o 'bichinho' da lista caso ele estiver morto
+            for (int i = 0; i < bichinhos.size(); i++) {
+                if (bichinhos.get(i).getHumor() == "Morto")
+                    bichinhos.remove(bichinhos.get(i));
+            }
+
             System.out.println("Seus bichinhos: ");
 
             for (Tamagotchi bichinho : bichinhos) {
@@ -67,5 +73,7 @@ public class exercicio017 {
                     break;
             }
         }
+
+        System.out.println("Todos seus bichinhos morreram :(");
     }
 }
