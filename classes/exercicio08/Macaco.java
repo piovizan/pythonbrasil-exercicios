@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Macaco {
 
-    String nome;
-    ArrayList<String> bucho = new ArrayList<>();
+    private String nome;
+    private ArrayList<String> bucho = new ArrayList<>();
 
     public Macaco(String nome) {
         this.nome = nome;
@@ -15,16 +15,16 @@ public class Macaco {
         return nome;
     }
 
-    void comer(String comida) {
+    public void comer(String comida) {
         bucho.add(comida);
     }
-    void comer(ArrayList<String> comida) {
-        bucho.addAll(comida);
+    public void comer(Macaco macaco) {
+        bucho.add(macaco.getNome());
     }
-    void digerir() {
+    public void digerir() {
         bucho.clear();
     }
-    ArrayList<String> verBucho() {
+    public ArrayList<String> verBucho() {
         return bucho;
     }
 }
